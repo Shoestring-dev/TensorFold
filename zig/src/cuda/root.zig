@@ -60,6 +60,7 @@ pub const rank_scatter = @import("rank_scatter.zig");
 pub const relay_plan = @import("relay_plan.zig");
 pub const tp_group = @import("tp_group.zig");
 pub const tp_watch = @import("tp_watch.zig");
+pub const startup_watch = @import("startup_watch.zig");
 pub const p2p_report = @import("p2p_report.zig");
 pub const ck = @import("ck.zig");
 pub const modelopt = @import("modelopt.zig");
@@ -84,6 +85,7 @@ test {
     _ = @import("p2p_nvml.zig");
     _ = @import("p2p_probe.zig");
     _ = @import("p2p_nccl_log_test.zig");
+    _ = startup_watch;
     _ = @import("p2p_report_test.zig");
     _ = exl3_grouped;
     _ = gdn_train;
